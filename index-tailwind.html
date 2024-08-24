@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/tailwind-style.css" />
+
+    <title>Portfolio SCSS</title>
+  </head>
+  <body class="font-sans leading-normal text-gray-800">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">MyPortfolio</a>
+        <nav>
+          <ul class="flex space-x-4">
+            <li>
+              <a href="#portfolio" class="hover:text-red-400">Portfolio</a>
+            </li>
+            <li><a href="#about" class="hover:text-red-400">About</a></li>
+            <li><a href="#contact" class="hover:text-red-400">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center text-center text-white bg-blue-800 py-16"
+    >
+      <div class="container mx-auto flex flex-col items-center">
+        <h1 class="text-4xl font-bold">Welcome to My Portfolio</h1>
+        <p class="text-xl mt-4">I build amazing websites.</p>
+        <a
+          href="#portfolio"
+          class="mt-6 px-6 py-3 bg-red-500 text-white rounded-full hover:bg-red-600"
+          >See My Work</a
+        >
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12">My Work</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img
+              src="images/Bitmap-1.png"
+              alt="Project 1"
+              class="w-full rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold">Project 1</h3>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img
+              src="images/Bitmap-1.png"
+              alt="Project 1"
+              class="w-full rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold">Project 2</h3>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img
+              src="images/Bitmap-1.png"
+              alt="Project 1"
+              class="w-[100%] rounded-lg mb-4"
+            />
+            <h3 class="text-xl font-semibold">Project 3</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+      <div
+        class="container mx-auto flex flex-col items-center lg:flex-row lg:items-start lg:space-x-8"
+      >
+        <img
+          src="images/Bitmap-4.png"
+          alt="My Photo"
+          class="w-32 h-32 rounded-full mb-8 lg:mb-0"
+        />
+        <div class="text-center lg:text-left">
+          <h2 class="text-3xl font-bold mb-4">About Me</h2>
+          <p class="text-lg">
+            I am a front-end developer with a passion for building responsive
+            and accessible web applications.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+        <form class="flex flex-col space-y-4 max-w-md mx-auto">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="w-full p-3 border border-gray-300 rounded-lg"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="w-full p-3 border border-gray-300 rounded-lg"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            class="w-full p-3 border border-gray-300 rounded-lg"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button
+            type="submit"
+            class="w-full py-3 bg-red-500 text-white rounded-lg hover:bg-red-600"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+        <ul class="flex justify-center space-x-4 mt-4">
+          <li><a href="#" class="hover:text-red-400">Twitter</a></li>
+          <li><a href="#" class="hover:text-red-400">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-red-400">GitHub</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Portfolio SCSS</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo">MyPortfolio</a>
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="header__menu-item"><a href="#about">About</a></li>
+            <li class="header__menu-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero__container">
+        <h1 class="hero__title">Welcome to My Portfolio</h1>
+        <p class="hero__subtitle">I build amazing websites.</p>
+        <a href="#portfolio" class="hero__cta"></a>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container portfolio__container">
+        <h2 class="portfolio__title">My work</h2>
+        <div class="portfolio__grid">
+          <article class="portfolio__item">
+            <img
+              src="images/Bitmap-1.png"
+              alt="Project 1"
+              class="portfolio__item-image"
+            />
+            <h3 class="portfolio__item-title">Project 1</h3>
+          </article>
+          <article class="portfolio__item">
+            <img
+              src="images/Bitmap-1.png"
+              alt="Project 1"
+              class="portfolio__item-image"
+            />
+            <h3 class="portfolio__item-title">Project 2</h3>
+          </article>
+          <article class="portfolio__item">
+            <img
+              src="images/Bitmap-1.png"
+              alt="Project 1"
+              class="portfolio__item-image"
+            />
+            <h3 class="portfolio__item-title">Project 3</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container about__container">
+        <img src="images/Bitmap-4.png" alt="My Photo" class="about__photo" />
+        <div class="about__text">
+          <div class="about__title">About Me</div>
+          <div class="about__description">
+            I am a front-end developer with a passion for building responsive
+            and accessible web applications.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container contact__container">
+        <h2 class="contact__title">Get in Touch</h2>
+        <form action="" class="contact__form">
+          <label for="name" class="contact__label">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="contact__input"
+            name="name"
+            required
+          />
+
+          <label for="email" class="contact__label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="contact__input"
+            name="email"
+            required
+          />
+
+          <label for="message" class="contact__label">Message</label>
+          <textarea
+            id="message"
+            class="contact__input contact__textarea"
+            name="message"
+            required
+          ></textarea>
+
+          <button type="submit" class="contact__submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <p class="footer__text">
+          &copy; 2024 MyPortfolio. All rights reserved.
+        </p>
+        <ul class="footer__social">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
